@@ -63,7 +63,7 @@ Run the two scripts in order — the vector database must exist before the app c
 The app uses a `qa_system_prompt` to guide the connected LLM's answers: it instructs the LLM to answer only from the retrieved context, admit when it doesn't know, and keep responses to three sentences or fewer. This prompt is domain-agnostic — it isn't hardcoded to the statistical learning textbook, so it works as-is for any source PDF. A second prompt (`contextualize_q_system_prompt`) rewrites follow-up questions into standalone queries using the chat history, so retrieval stays accurate across a multi-turn conversation. What *is* specific to this iteration is the Streamlit UI copy (page title and chat input placeholder), which references "Data Science" — see below for pointing the app at a different document.
 
 Basic mapping of the model:
-![RAG pipeline diagram](img/rag_model.jpg)
+![RAG pipeline diagram](img/app_diagram.jpg)
 
 ## Using a Different Document
 
