@@ -1,0 +1,12 @@
+# Secrets
+credentials.yml
+
+# Generated vector store (rebuild with 01_vector_db_statistical_learning.py)
+data/chroma_statistical_learning.db/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
