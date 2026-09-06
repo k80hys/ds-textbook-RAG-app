@@ -1,12 +1,3 @@
-# BUSINESS SCIENCE UNIVERSITY
-# PYTHON FOR GENERATIVE AI COURSE
-# RETRIEVAL-AUGMENTED GENERATION (RAG)
-# ***
-
-# CHALLENGE 1: CREATE A DATA SCIENCE EXPERT USING THE INTRODUCTION TO STATISTICAL LEARNING WITH PYTHON PDF
-
-# DIFFICULTY: BEGINNER
-
 # streamlit run 02_app_statistical_learning.py
 
 """
@@ -123,13 +114,10 @@ if question := st.chat_input("Enter your Data Science question here:", key="quer
                 "configurable": {"session_id": "any"}
             },
         )
-        # Debug response
-        # print(response)
-        # print("\n")
   
         st.chat_message("ai").write(response['answer'])
 
-# * NEW: View the messages for debugging
+# View the messages for debugging
 # Draw the messages at the end, so newly generated ones show up immediately
 with view_messages:
     """
